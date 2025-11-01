@@ -22,12 +22,4 @@ class NewsItem {
       viewNum: json['view_num']?.toString() ?? '0',
     );
   }
-
-  Map<String, dynamic> toJson() => {
-    'id': id,
-    'title': title,
-    'pic_name': picName,
-    'date': date,
-    'view_num': viewNum,
-  };
 }

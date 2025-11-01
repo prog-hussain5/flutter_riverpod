@@ -6,7 +6,7 @@ class NewsService {
   static const String _baseUrl =
       'https://imamali.net/imamAliNetworkApp/get_news_items.php';
 
-  Future<List<NewsItem>> fetchNews({int itemsCount = 10}) async {
+  Future<List<NewsItem>> fetchNews({required int itemsCount}) async {
     final uri = Uri.parse('$_baseUrl?itemsCount=$itemsCount');
     final response = await http.get(uri);
 

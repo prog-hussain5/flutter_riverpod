@@ -11,9 +11,7 @@ class NewsListScreen extends ConsumerWidget {
     final asyncNews = ref.watch(newsListProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('الأخبار'),
-      ),
+      appBar: AppBar(title: const Text('الأخبار')),
       body: RefreshIndicator(
         onRefresh: () async {
           // Invalidate and then wait for the new future to complete
